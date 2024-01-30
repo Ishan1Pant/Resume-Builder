@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+</head>
+<body>
+    <h1>Datbase for all Candidates</h1>
+    {% for items in list_items %}
+    <div class="container">
+        <div>
+            <h3>{{items.name}}</h3>
+        </div>
+        <div>
+            <a href="/{{items.id}}">Download</a>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
